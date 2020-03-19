@@ -27,8 +27,8 @@
         </a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="">
+      <li class="nav-item {{ Request::is('admin/category*') ? 'active' : ''}}">
+        <a class="nav-link" href="{{ route('category.index') }}">
           <i class="material-icons">bubble_chart</i>
           <p>Categories</p>
         </a>
