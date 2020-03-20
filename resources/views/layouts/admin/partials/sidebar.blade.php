@@ -20,8 +20,8 @@
           <p>Users</p>
         </a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="./tables.html">
+      <li class="nav-item {{ Request::is('admin/tag*') ? 'active' : ''}}">
+        <a class="nav-link" href="{{ route('tag.index') }}">
           <i class="material-icons">content_paste</i>
           <p>Tags</p>
         </a>

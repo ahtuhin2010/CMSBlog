@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="792dfe9b-348c-412a-92e3-c9e09ec71667" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/partials/errors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/partials/errors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/partials/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/partials/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -168,7 +170,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584480665553</updated>
       <workItem from="1584480671823" duration="2712000" />
-      <workItem from="1584637027095" duration="2565000" />
+      <workItem from="1584637027095" duration="3177000" />
+      <workItem from="1584692574494" duration="5331000" />
     </task>
     <servers />
   </component>
@@ -176,21 +179,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="162" key="SettingsEditor" timestamp="1584638869969">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1584695059812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584638869969" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584637029338">
+    <state x="461" y="162" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584695059812" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1584692585350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584637029338" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584692585350" />
     <state x="552" y="178" key="scopes" timestamp="1584638834339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="scopes/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584638834339" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1584637344242">
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1584695707684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584637344242" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1584695707684" />
   </component>
 </project>

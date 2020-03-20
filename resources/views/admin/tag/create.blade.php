@@ -1,6 +1,6 @@
 @extends('layouts.admin.app')
 
-@section('title', 'Create Category')
+@section('title', 'Create Tag')
 
 @section('content')
 
@@ -10,10 +10,10 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Add New Category</h4>
+                            <h4 class="card-title ">Add New Tag</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('category.store')}}" method="POST">
+                            <form action="{{ route('tag.store')}}" method="POST">
                                 @csrf
                                 <div class="row mb-3">
                                     <div class="col-md-12">
@@ -31,7 +31,7 @@
                                     </div>
                                 </div>
 
-                                <a href="{{ route('category.index')}}" class="btn btn-warning">Back</a>
+                                <a href="{{ route('tag.index')}}" class="btn btn-warning">Back</a>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </form>
                         </div>

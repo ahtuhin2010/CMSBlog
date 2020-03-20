@@ -20,7 +20,7 @@
   <!-- CSS For Toastr -->
   <link href="{{ asset('backend/css/toastr.min.css') }}" rel="stylesheet" />
 
-  @yield('css')
+  @stack('css')
 
 
 </head>
@@ -276,7 +276,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
-  @yield('scripts')
+  @stack('scripts')
 
 
 

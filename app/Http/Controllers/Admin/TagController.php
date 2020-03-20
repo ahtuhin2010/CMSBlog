@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Category;
 use App\Http\Controllers\Controller;
+use App\Tag;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
+        $tags = Tag::all();
 
-        return view('admin.category.index', compact('categories'));
+        return view('admin.tag.index', compact('tags'));
     }
 
     /**
@@ -27,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.create');
+        return view('admin.tag.create');
     }
 
     /**
@@ -39,14 +39,14 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => ['required', 'unique:categories']
+            'name' => ['required', 'unique:tags']
         ]);
 
-        $category = Category::create([
+        $tag = Tag::create([
             'name' => $request->name,
         ]);
 
-        return redirect()->route('category.index')->with('success', 'Category Created Successfully');
+        return redirect()->route('tag.index')->with('success', 'Tag Created Successfully');
     }
 
     /**
@@ -68,8 +68,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        $category = Category::find($id);
-        return view('admin.category.edit', compact('category'));
+        $tag = Tag::find($id);
+
+        return view('admin.tag.edit', compact('tag'));
     }
 
     /**
@@ -82,16 +83,16 @@ class CategoryController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'name' => 'required'
+            "name" => 'required'
         ]);
 
-        $category = Category::find($id);
+        $tag = Tag::find($id);
 
-        $category->name = $request->name;
+        $tag->name = $request->name;
 
-        $category->save();
+        $tag->save();
 
-        return redirect()->route('category.index')->with('success', 'Category Updated Successfully');
+        return redirect()->route('tag.index')->with('success', 'Tag Updated Successfully');
     }
 
     /**
@@ -102,10 +103,10 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $category = Category::find($id);
+        $tag = Tag::find($id);
 
-        $category->delete();
+        $tag->delete();
 
-        return redirect()->back()->with('success', 'Category Deleted Successfully');
+        return redirect()->back()->with('success', 'Tag Deleted Successfully');
     }
 }
